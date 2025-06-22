@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ShipCostCalculator
 {
     public static void main(String[] args)
-    {
+
         //class ShippingCost
         //main ()
         //    num itemPrice
@@ -21,7 +21,7 @@ public class ShipCostCalculator
         //    output "Total price: $" + totalPrice
         //   return
         //end class
-
+    {
         Scanner in = new Scanner(System.in);
 
         double itemPrice = 0;
