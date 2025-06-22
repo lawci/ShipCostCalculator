@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class ShipCostCalculator {
-    public static void main(String[] args) {
+public class ShipCostCalculator
+{
+    public static void main(String[] args)
+    {
         //class ShippingCost
         //main ()
         //    num itemPrice
@@ -27,20 +29,25 @@ public class ShipCostCalculator {
         String trash = "";
 
         System.out.print("Enter the item price: ");
-        if (in.hasNextDouble()) {
+        if (in.hasNextDouble())
+        {
             itemPrice = in.nextDouble();
             in.nextLine();
 
             if (itemPrice >= 100) {
                 shippingCost = 0;
-            } else {
+            }
+            else
+            {
                 shippingCost = itemPrice * 0.02;
             }
 
             double totalPrice = itemPrice + shippingCost;
             System.out.println("Shipping cost: $" + shippingCost);
             System.out.println("Total price: $" + totalPrice);
-        } else {
+        }
+        else
+        {
             trash = in.nextLine();
             System.out.println("Invalid input: " + trash);
         }
